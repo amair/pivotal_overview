@@ -1,5 +1,5 @@
 <% unless @projects.nil? %>
     <% @projects.each do |p| %>
-        <%= p.name %>
+        <%= p.name unless p.nil?%>
     <% end %>
 <% end %>

@@ -32,8 +32,9 @@ group :test do
 end
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'sqlite3'
+  gem 'webmock'
 end
 
 # To use debugger
