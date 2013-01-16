@@ -3,6 +3,10 @@ PivotalOverview::Application.routes.draw do
   resources :print do
 
   end
+
+  resources :story do
+
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

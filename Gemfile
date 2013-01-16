@@ -29,12 +29,12 @@ group :production do
 end
 
 group :test do
+  gem 'webmock'
 end
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
-  gem 'webmock'
 end
 
 # To use debugger

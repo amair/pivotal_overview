@@ -29,8 +29,5 @@ describe PrintController do
 
   end
 
-  it 'should retrieve all the projects' do
-    double
-  end
 end
 

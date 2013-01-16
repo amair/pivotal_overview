@@ -1,5 +1,18 @@
 <% unless @projects.nil? %>
     <% @projects.each do |p| %>
-        <%= p.name unless p.nil?%>
+        <div class = "project">
+          <div class ="header">
+            <%= p.name %>
+          </div>
+          <div class = "stories">
+            <% ProjectData.find_all_stories(p).each do |story| %>
+            <div class="story">
+              <%= check_box_tag 'story[]', [story.project_id, story.id],
+                                (params[:stories] || {}).include?(story.id) %>
+              <%= story.name %>
+            </div>
+            <% end %>
+          </div>
+        </div>
     <% end %>
 <% end %>
