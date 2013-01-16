@@ -20,4 +20,5 @@ class PrintController < ApplicationController
 
     @projects = ProjectData.find_all_projects
   end
+
 end

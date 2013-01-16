@@ -2,10 +2,9 @@
   <%= form_tag({:controller => :print, :action => "index"}, :method => "get", :class => "state_chooser") do %>
 
       <div class="form_row">
-        <label for="state[]">Conditions:</label>
+        <label for="state[]">Included States:</label>
         <% @state_selection.each do |s| %>
-            <br><%= check_box_tag 'state[]', s,
-                                  (params[:states] || {}).include?(s) %>
+            <br><%= check_box_tag 'state[]', s, (params[:states] || {}).include?(s) %>
             <%= s %>
         <% end %>
       </div>
@@ -24,7 +23,7 @@
           </div>
           <div class = "stories">
 
-            <%= render :partial => "story", :collection => ProjectData.find_all_stories(p) %>
+            <%= render :partial => "story", :collection => get_filtered_stories(p) %>
 
           </div>
         </div>
