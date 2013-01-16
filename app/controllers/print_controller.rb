@@ -1,8 +1,9 @@
 class PrintController < ApplicationController
 
+  @current_filter = @state_selection
+
   def index
     @state_selection = ["unscheduled", "unstarted", "started", "finished", "delivered", "accepted", "rejected"]
-
 
     token = params[:token]
 
@@ -18,6 +19,5 @@ class PrintController < ApplicationController
     end
 
     @projects = ProjectData.find_all_projects
-
   end
 end

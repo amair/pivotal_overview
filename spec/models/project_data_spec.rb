@@ -26,7 +26,7 @@ describe ProjectData do
   it 'should retrieve all active stories for a project' do
     stories_resp = load_xml_fixture_file('active_stories')
 
-    stub_request(:get, "http://www.pivotaltracker.com/services/v3/projects/332489/stories?filter=current_state:unscheduled,unstarted,started,finished,delivered,accepted,rejected").to_return(:status => 200, :body => stories_resp, :headers => {})
+    stub_request(:get, "http://www.pivotaltracker.com/services/v3/projects/332489/stories?filter=current_state:unscheduled,unstarted,started,finished,delivered,accepted,rejected%20story_type:feature,bug,chore").to_return(:status => 200, :body => stories_resp, :headers => {})
 
     project = @projects.first
 
@@ -38,7 +38,7 @@ describe ProjectData do
   it 'should retrieve only stories in the requested state' do
     stories_resp = load_xml_fixture_file('filtered_stories')
 
-    stub_request(:get, "http://www.pivotaltracker.com/services/v3/projects/332489/stories?filter=current_state:unscheduled,unstarted").to_return(:status => 200, :body => stories_resp, :headers => {})
+    stub_request(:get, "http://www.pivotaltracker.com/services/v3/projects/332489/stories?filter=current_state:unscheduled,unstarted%20story_type:feature,bug,chore").to_return(:status => 200, :body => stories_resp, :headers => {})
 
     project = @projects.first
 
