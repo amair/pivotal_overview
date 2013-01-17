@@ -2,21 +2,37 @@
 <html>
 <head>
   <title>PivotalOverview</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="token_input">
-  <%= form_tag(:controller, :method => "get") do%>
-    <%= label_tag(:token, "Enter your Pivotal Tracker Token:") %>
-    <%= text_field_tag(:token) %>
-    <%= submit_tag("Submit") %>
-  <% end %>
-</div>
+<div class="main_border">
 
-<%= yield %>
+  <div class="page_header clearfix">
+    <div class="page_banner"></div>
+    <div class="token">
+      <div class="token_input">
+        <%= form_tag(:controller, :method => "get") do %>
+            <%= label_tag(:token, "Enter your Pivotal Tracker Token:") %>
+            <%= text_field_tag(:token) %>
+            <%= submit_tag("Submit") %>
+        <% end %>
+      </div>
+      <div class="close_button">X</div>
+    </div>
+  </div>
+
+
+
+  <%= yield %>
+
+  <div class="footer">
+    (c) 2012 - <%= get_current_year %>  - All rights reserved - use of this site comes with no warranty
+  </div>
+
+</div>
 
 </body>
 </html>

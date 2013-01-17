@@ -1,3 +1,65 @@
 // Place all the styles related to the print controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.projects {
+  border-bottom: 3px solid #FFFFFF;
+  float: left;
+}
+
+.project .header {
+  border-left: 3px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
+  border-top: 3px solid #FFFFFF;
+  padding: 5px;
+  background-color: #28313F;
+  color: #ffffff;
+  font-family: 'Courier New', Verdana;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.stories {
+  background-color: #7c7c7c;
+  border-left: 3px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
+  border-top: 3px solid #FFFFFF;
+  margin-top: 0px;
+}
+
+.stories .story {
+  background-color: #c4c4c4;
+  border: 1px solid #FFFFFF;
+  border: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1em;
+}
+
+.printrows {
+  width: 80%;
+  min-width: 300px;
+  left: 10%;
+  background-color: #a9a77e;
+}
+
+.printrows a:link {
+  color: #000000;
+}
+
+.printrows a:visited {
+  color: #000000;
+}
+
+.print_display_opts {
+  border: 1px solid #FFFFFF;
+  background-color: #28313F;
+  padding: 5px;
+  margin: 3px;
+  float: left;
+  clear: both;
+}
+
+.print_filter_button {
+
+}

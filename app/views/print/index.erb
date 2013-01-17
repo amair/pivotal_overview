@@ -2,7 +2,7 @@
   <%= form_tag({:controller => :print, :action => "index"}, :method => "get", :class => "state_chooser") do %>
 
       <div class="form_row">
-        <label for="state[]">Included States:</label>
+        <label for="state[]">States:</label>
         <% @state_selection.each do |s| %>
             <br><%= check_box_tag 'state[]', s, (params[:states] || {}).include?(s) %>
             <%= s %>
@@ -10,22 +10,31 @@
       </div>
 
       <div class="print_filter_button">
-      <%= submit_tag("Choose Stories", :class => 'print_filter_button' ) %>
+        <%= submit_tag("Print Stories", :class => 'print_filter_button') %>
       </div>
   <% end %>
 </div>
 
-<% unless @projects.nil? %>
-    <% @projects.each do |p| %>
-        <div class = "project">
-          <div class ="header">
-            <%= p.name %>
-          </div>
-          <div class = "stories">
-
-            <%= render :partial => "story", :collection => get_filtered_stories(p) %>
-
-          </div>
-        </div>
-    <% end %>
-<% end %>
+<div class="projects">
+  <% if Token.get_token.nil? %>
+      <div id="error"></div>
+      Please set your Pivotal tracker token. This can be found under the profile menu on your
+      <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> site when logged in. </div>
+  <% elsif @projects.nil? %>
+      <div id="error">No project data could be retrieved from Pivotal Tracker</div>
+  <% else %>
+      <% @projects.each do |p| %>
+          <% stories = get_filtered_stories(p) %>
+          <% unless stories.nil? %>
+              <div class="project">
+                <div class="header">
+                  <%= p.name %>
+                </div>
+                <div class="stories">
+                  <%= render :partial => "story", :collection => stories %>
+                </div>
+              </div>
+          <% end %>
+      <% end %>
+  <% end %>
+  </div>
