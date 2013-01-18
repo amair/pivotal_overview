@@ -8,11 +8,26 @@ class ProjectData < PivotalTracker::Project
       projects
   end
 
+  def self.find_project (id)
+    PivotalTracker::Client.token = Token.get_token
+    project = PivotalTracker::Project.find(id)
+
+    project
+  end
+
   def self.find_all_stories(project, states=["unscheduled", "unstarted", "started", "finished", "delivered", "accepted", "rejected"])
     PivotalTracker::Client.token = Token.get_token
     stories = project.stories.all(:current_state => states, :story_type => ['feature', 'bug', 'chore'] )
 
     stories
   end
+
+  def self.find_story(project, id)
+    PivotalTracker::Client.token = Token.get_token
+    story = project.stories.find(id)
+
+    story
+  end
+
 
 end

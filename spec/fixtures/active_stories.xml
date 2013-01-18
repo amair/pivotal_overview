@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stories type="array" count="36" total="36" filter="current_state:unscheduled,unstarted,started,finished,delivered,accepted,rejected">
+  <story>
+    <id type="integer">27023259</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27023259</url>
+    <estimate type="integer">1</estimate>
+    <current_state>delivered</current_state>
+    <description>As an agent I want to be able to raise a new claim for a device retrieval, as per the (first part of the) attached flow.  Data captured should be
+&#8220;Gadget Type&#8221; (Laptop, Handset, Gadget)
+Serial number (optional)
+Policy Number and Claim Auth
+Name and Address (inc postcode)
+Make &amp; model of device</description>
+    <name>Raise new device retrieval claim (CPP4)</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+    <updated_at type="datetime">2012/04/03 13:36:37 UTC</updated_at>
+    <labels>7th april,cpp4</labels>
+    <notes type="array">
+    </notes>
+    <attachments type="array">
+      <attachment>
+        <id type="integer">5471659</id>
+        <filename>Insuarnce_Collection_Request__CPP4__Process_Flow_V1.0.vsd</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2012/03/26 15:30:30 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/5471659</url>
+      </attachment>
+    </attachments>
+    <tasks type="array">
+      <task>
+        <id type="integer">6418383</id>
+        <description>Data entry screen to capture claim details</description>
+        <position type="integer">1</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6418385</id>
+        <description>New CPP claim type and routing</description>
+        <position type="integer">2</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+      </task>
+    </tasks>
+  </story>
+  <story>
+    <id type="integer">27292519</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27292519</url>
+    <estimate type="integer">3</estimate>
+    <current_state>delivered</current_state>
+    <description>Modify Jiffy bag request.
+For gadgets and phones use label &quot;CPP4&quot; and attached letter.
+For laptops instruct the operator to raise a Citylink collection and capture the consignment number (no validation on consignment number)</description>
+    <name>Send collection bag (CPP4)</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/03/30 14:41:51 UTC</created_at>
+    <updated_at type="datetime">2012/04/10 08:59:49 UTC</updated_at>
+    <labels>7th april,cpp4</labels>
+    <notes type="array">
+    </notes>
+    <attachments type="array">
+      <attachment>
+        <id type="integer">5555289</id>
+        <filename>CPP_Collection_Form.doc</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2012/03/30 14:41:43 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/5555289</url>
+      </attachment>
+    </attachments>
+  </story>
+  <story>
+    <id type="integer">27023517</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27023517</url>
+    <estimate type="integer">3</estimate>
+    <current_state>delivered</current_state>
+    <description>As a screening operator I want to scan a received consgnment number and be guided through the screening process as per the attached flow.</description>
+    <name>Device Retrieval (CPP4) screening</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/03/26 16:04:42 UTC</created_at>
+    <updated_at type="datetime">2012/04/13 12:48:40 UTC</updated_at>
+    <labels>cpp4</labels>
+    <notes type="array">
+    </notes>
+    <attachments type="array">
+      <attachment>
+        <id type="integer">5472651</id>
+        <filename>Insuarnce_Collection_Request__CPP4__Process_Flow_V1.0.vsd</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2012/03/26 16:04:32 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/5472651</url>
+      </attachment>
+    </attachments>
+    <tasks type="array">
+      <task>
+        <id type="integer">6562559</id>
+        <description>Add line for cpp4 devices</description>
+        <position type="integer">1</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/03 13:41:27 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6562581</id>
+        <description>capture claim detail for line</description>
+        <position type="integer">2</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/03 13:41:51 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6562583</id>
+        <description>confirm device details match with claim</description>
+        <position type="integer">3</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/03 13:42:18 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6604331</id>
+        <description>produce initial skeleton flow for screening process from device check</description>
+        <position type="integer">4</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/05 08:58:58 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6625809</id>
+        <description>add task for capturing the IMEI of a handset</description>
+        <position type="integer">5</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/06 12:42:20 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6625813</id>
+        <description>add task for looking up the damaged device sku of a handset</description>
+        <position type="integer">6</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/06 12:42:45 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6625823</id>
+        <description>add a task for allocating a damaged sku to laptops and gadgets</description>
+        <position type="integer">7</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/06 12:43:21 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6625829</id>
+        <description>add task to assign a serial number to laptops and gadgets</description>
+        <position type="integer">8</position>
+        <complete type="boolean">true</complete>
+        <created_at type="datetime">2012/04/06 12:43:59 UTC</created_at>
+      </task>
+      <task>
+        <id type="integer">6694285</id>
+        <description>create warehouse adjustment at end of screening</description>
+        <position type="integer">9</position>
+        <complete type="boolean">false</complete>
+        <created_at type="datetime">2012/04/11 14:53:52 UTC</created_at>
+      </task>
+    </tasks>
+  </story>
+  <story>
+    <id type="integer">27642901</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27642901</url>
+    <estimate type="integer">1</estimate>
+    <current_state>finished</current_state>
+    <description>Add a new dropdown to manual claim creation screen which allows the operator to choose between Standard, Advance Replacement, Doorstep Exchange when the claim type is Accidental damage.
+
+Loss or Theft claims will always be standard.</description>
+    <name>Manual claim creation (CPP7)</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/04/06 14:29:23 UTC</created_at>
+    <updated_at type="datetime">2012/04/11 10:04:58 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">27643391</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27643391</url>
+    <estimate type="integer">1</estimate>
+    <current_state>delivered</current_state>
+    <description>Need a new claim flow for doorstep exchanges which mimics the ReplaceRecoverClaim - go straight into device retrieval but then allow the device to be received, validated and screened.
+
+see attached flow</description>
+    <name>Doorstep Exchange claim type (CPP7)</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/04/06 14:35:11 UTC</created_at>
+    <updated_at type="datetime">2012/04/20 12:22:48 UTC</updated_at>
+    <notes type="array">
+    </notes>
+    <attachments type="array">
+      <attachment>
+        <id type="integer">5691831</id>
+        <filename>Insuarnce_Device_Replacement_Escalations__CPP7__Process_Flow_V1.0.vsd</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2012/04/06 14:35:04 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/5691831</url>
+      </attachment>
+    </attachments>
+  </story>
+  <story>
+    <id type="integer">27643507</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27643507</url>
+    <estimate type="integer">1</estimate>
+    <current_state>started</current_state>
+    <description>As a dispatch operator I want to clearly see that a dispatch is a DPD Doorstep exchange. I also want to see the work instructions (WI) attached.
+I also want the ability to record two tracking refs (inbound and outbound) against the claim.  (Inbound is same as existing)</description>
+    <name>Modify dispatch process for CPP7</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/04/06 14:37:31 UTC</created_at>
+    <updated_at type="datetime">2012/04/18 08:54:01 UTC</updated_at>
+    <notes type="array">
+    </notes>
+    <attachments type="array">
+      <attachment>
+        <id type="integer">5691879</id>
+        <filename>Insuarnce_Device_Replacement_Escalations__CPP7__Process_Flow_V1.0.vsd</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2012/04/06 14:39:55 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/5691879</url>
+      </attachment>
+    </attachments>
+  </story>
+  <story>
+    <id type="integer">28811285</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/28811285</url>
+    <estimate type="integer">3</estimate>
+    <current_state>started</current_state>
+    <description>As a financial operator I want to see an item job journal to correspond with the charge job journal when credits are made.  Credits should be made whenever a 14-day, warranty or failed delivery device is returned to stock.</description>
+    <name>Use ItemJobJournal for credits</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/04/30 07:24:42 UTC</created_at>
+    <updated_at type="datetime">2012/05/08 07:38:51 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">28811237</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/28811237</url>
+    <current_state>delivered</current_state>
+    <description>Screen Accidental damage line expects all claim auths to be exactly 8 digits long.  This is not correct they can be 8 to 10 (inclusive)</description>
+    <name>Screen accidental line does not accent 9 or 10 digit claim auths</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/04/30 07:22:14 UTC</created_at>
+    <updated_at type="datetime">2012/05/08 07:38:58 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">29401689</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/29401689</url>
+    <current_state>delivered</current_state>
+    <description>As an agent I want to be able to change the name/address/tel on a claim before raising a redelivery and have it use the new address.  Currently the re-delivery will always be created using the original (cpp_claim_data) address details.</description>
+    <name>Failed Delivery - redelivery using old address</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2012/05/10 15:55:51 UTC</created_at>
+    <updated_at type="datetime">2012/07/19 12:30:53 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">42132825</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/42132825</url>
+    <current_state>delivered</current_state>
+    <description>When there is more than 1 claim with the same auth and the last claim is &quot;out_for_repair&quot;.  I want to be able to upload a BER report and have the claim move to replacement order.</description>
+    <name>Allow for &gt;1 claim with same claim auth when creating BER</name>
+    <requested_by>Alastair Mair</requested_by>
+    <owned_by>Alastair Mair</owned_by>
+    <created_at type="datetime">2013/01/08 13:45:22 UTC</created_at>
+    <updated_at type="datetime">2013/01/08 13:45:33 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">25400385</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/25400385</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unstarted</current_state>
+    <description>New claim flow is required for doorstep exchanges via DPD.  Process is same as current lossTheftClaim except after sending the device it transitions to an awaiting_device state and only successful screening of the returned device transitions to complete.
+Use same letters as LossTheft</description>
+    <name>Doorstep exchange claim</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/02/23 16:37:14 UTC</created_at>
+    <updated_at type="datetime">2012/03/13 10:59:44 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">40181287</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/40181287</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>CPPClaimData allows data to be deleted from the UI.
+This should not be supported, instead data should be flagged as deleted and not displayed through the UI.
+Additionally the user and time of deletion needs to be recorded.</description>
+    <name>Audit deletions</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/11/27 08:55:56 UTC</created_at>
+    <updated_at type="datetime">2012/11/27 08:55:56 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">39993725</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/39993725</url>
+    <estimate type="integer">1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>When screening of a returned device completes only CPP2,3,5 claims should raise a device validation  status message in order to release a replacement order.  Currently hydra is generating a 422 (unprocessable entity) error for Replace&amp;Recover and AccidentalDamageRepair handsets which are screened.</description>
+    <name>Only 14-day and AD claims should raise device validation messages</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/11/22 10:29:13 UTC</created_at>
+    <updated_at type="datetime">2012/11/22 10:29:13 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">39945739</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/39945739</url>
+    <estimate type="integer">1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>As an operator I should not be able to raise a 14-day claim when there is already a claim with the same claim auth which is NOT in the completed or cancelled state.</description>
+    <name>Limit open claims to one per claim auth</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/11/21 15:13:27 UTC</created_at>
+    <updated_at type="datetime">2012/11/21 15:13:52 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">38731811</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/38731811</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>In many applications there is no working functionality for a user to log out.  E.g.
+O2 repair
+CPP Insurance
+CPP Returns
+</description>
+    <name>CAS logout functionality</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/10/31 14:14:35 UTC</created_at>
+    <updated_at type="datetime">2012/10/31 14:14:35 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">25109683</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/25109683</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>In order to synchronise with a new video recording process we need a &quot;pack &amp; dispatch&quot; station.  This station will ask the operator to enter the consignment number.  This is recorded and timestamped while the operator ensures a camera captures the contents of the box being put in the dispatch envelope.  If necessary it will later be able to use this timestamp to retrieve the correct section of video.</description>
+    <name>Record ship/pack time</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/02/17 12:19:02 UTC</created_at>
+    <updated_at type="datetime">2012/11/19 14:45:25 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">23004163</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/23004163</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>As a warehouse operator I want the ability to scan the IMEI of a device in front of me on the main pick screen without having to locate a claim.  If successful, State should move to shipment, a success message is displayed and have the ability to scan the next device.  If failure then display a suitable error message.</description>
+    <name>Device scan to fulfil</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/01/05 10:35:06 UTC</created_at>
+    <updated_at type="datetime">2012/11/19 14:45:23 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">23004095</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/23004095</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>As a warehouse operator I want to see:
+- Paged view of the Picklist (20 picks per page)
+- A Total of number of unpicked devices
+- For Each Pick include, claim auth #, IMEI, Location and Accessories required</description>
+    <name>Re-design Pick list</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/01/05 10:32:08 UTC</created_at>
+    <updated_at type="datetime">2012/11/19 14:45:21 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">22069989</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/22069989</url>
+    <current_state>unscheduled</current_state>
+    <description>If a claim file has any blank lines in it, it creates blank claims that fall into the upload exception queue. See attached example.
+
+Either need ability to delete these from the queue (dangerous!) or these need to be stripped out when parsed.</description>
+    <name>Claim File Upload Exception queue</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Alastair Mair</owned_by>
+    <lighthouse_id>32</lighthouse_id>
+    <lighthouse_url>http://regenersis.lighthouseapp.com/projects/86258/tickets/32</lighthouse_url>
+    <integration_id>9671</integration_id>
+    <created_at type="datetime">2011/12/09 09:22:02 UTC</created_at>
+    <updated_at type="datetime">2012/11/19 14:45:18 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">26858901</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/26858901</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>When a device is returned under warranty for which the claim was initially raised in Sellphone the operator uses the page at http://cpp-insurance-uat.therepairline.co.uk/fourteen_days_return_claims/build_form to setup the claim.  This needs to force an original_item and original_variant to be specified so that the damaged item can booked into stock on Dynamics Nav after screening</description>
+    <name>Blank item number for warranty returned devices</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/03/22 14:27:07 UTC</created_at>
+    <updated_at type="datetime">2012/10/19 13:16:51 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">25108529</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/25108529</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>In every case when evaluating what devices can be used as an alternative the same rule should be applied - first look for network specific stock, then look for sim free stock.
+This would simplify the maintenance of the alternative matrices as the administrator can simply add one model number and the system can automatically infer the other alternative.</description>
+    <name>Alternative matrix should not be required to specify network alternatives</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/02/17 11:50:29 UTC</created_at>
+    <updated_at type="datetime">2012/10/19 13:17:22 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">25045155</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/25045155</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>When specifying alternatives through the interface it is currently necessary to explicitly include every valid network specific device that can be used.  Instead of this the system should follow a simple rule and automatically include first then network specific model, then the SIM Free.</description>
+    <name>Remove network options from Alternative Matrix</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/02/16 11:20:18 UTC</created_at>
+    <updated_at type="datetime">2012/10/19 13:17:21 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">31350963</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/31350963</url>
+    <estimate type="integer">1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>Some timeouts from the DNav server are causing the device reservation to fail, but the claim is proceeding to device pick.  this means that it cannot find a device to pick when the operator goes into that screen</description>
+    <name>Timeout reservations are appearing in pick as &quot;14 day good stock&quot; bin</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/06/18 07:40:23 UTC</created_at>
+    <updated_at type="datetime">2012/10/19 13:16:23 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">31201175</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/31201175</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>Every day a lot of 14-day returned devices cannot be screened completely and do not release a replacement order.  Example auths are 12652732, 12606180, 12624750, 12644247, 12637435, 125868140, 12606856, 12637345, 12603947, 12626447, 12598187, 12559341, 12635880, 12646144, 12641586, 12633450, 12636765, 12648468, 12650837, 12546302
+ 
+</description>
+    <name>&quot;Stuck&quot; 14-day screening process</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/06/14 09:43:58 UTC</created_at>
+    <updated_at type="datetime">2012/06/14 09:43:58 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">32584869</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/32584869</url>
+    <current_state>unscheduled</current_state>
+    <description>Because a claim which has reached failed_device_reservation has created a device_reservation record the system will attempt to unreserve a device.  In this case though the device_reference is nil (because we failed to reserve).
+
+System needs to check for a nil device_reference and skip the unreserve call if found.</description>
+    <name>Cannot cancel a claim in failed_device_reservation</name>
+    <requested_by>Alastair Mair</requested_by>
+    <created_at type="datetime">2012/07/11 09:32:08 UTC</created_at>
+    <updated_at type="datetime">2012/10/19 13:14:13 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">30146923</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/30146923</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>Brief Summary: When selecting the 14 day returns button to request a jiffy to be sent it will generate a Jiffy for the original Model Claimed on. If we have sent a Direct alternative or a Chosen Model when we press the 14 day returns button it will still only generate for original model unless the details are manually entered.			
+Requirements:                                                                                                                                                                                   can we amend this so that the last model on that claim is generated not the original model ie BLACKBERRY 9000 CLAIMED ON - BLACKBERRY 9700 SENT when jiffy bag gets generated we want the blackberry 9700 to come up	
+			
+			
+</description>
+    <name>14 day claim is raised for original device, not replacement device</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/05/24 15:44:28 UTC</created_at>
+    <updated_at type="datetime">2012/05/24 15:44:29 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">22084359</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/22084359</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>The set of dispatch letters does not have a 1:1 mapping with campaigns.  More than one campaign may use the same letter set.
+
+As an admin I want the ability to manage which letter set is used on a campaign.
+
+Letter_Matrix_2 shows which letters should be used (letter matrix) for each different letter available. Campaigns_V5 maps each campaign to the letter ID found in that matrix.  Actual letters are in the zip file.</description>
+    <name>Manage campaign letters</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2011/12/09 16:13:48 UTC</created_at>
+    <updated_at type="datetime">2012/02/06 16:21:33 UTC</updated_at>
+    <notes type="array">
+    </notes>
+    <attachments type="array">
+      <attachment>
+        <id type="integer">4052735</id>
+        <filename>Letters__1_.zip</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2011/12/09 16:10:24 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/4052735</url>
+      </attachment>
+      <attachment>
+        <id type="integer">4052737</id>
+        <filename>LetterMatrix__2_.xlsx</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2011/12/09 16:10:25 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/4052737</url>
+      </attachment>
+      <attachment>
+        <id type="integer">4052743</id>
+        <filename>Copy_of_Copy_of_Campaigns_V5.xlsx</filename>
+        <description></description>
+        <uploaded_by>Developers</uploaded_by>
+        <uploaded_at type="datetime">2011/12/09 16:11:25 UTC</uploaded_at>
+        <url>https://www.pivotaltracker.com/resource/download/4052743</url>
+      </attachment>
+    </attachments>
+  </story>
+  <story>
+    <id type="integer">22941851</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/22941851</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>As an operator I want the ability to change the assigned device for an order which is in the awaiting_stock state.</description>
+    <name>Provide ability to change device when no stock available</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/01/04 10:28:06 UTC</created_at>
+    <updated_at type="datetime">2012/01/04 10:28:06 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">21270977</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/21270977</url>
+    <current_state>unscheduled</current_state>
+    <description>When a session in cpp-returns or cpp-insurance expires but you try to submit the page it gives a 500 error instead of taking you to the login page</description>
+    <name>Missing session expired page</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <lighthouse_id>2</lighthouse_id>
+    <lighthouse_url>http://regenersis.lighthouseapp.com/projects/86258/tickets/2</lighthouse_url>
+    <integration_id>9671</integration_id>
+    <created_at type="datetime">2011/11/21 08:43:04 UTC</created_at>
+    <updated_at type="datetime">2011/12/09 17:45:36 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">22073523</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/22073523</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>As an agent I require the ability to request an additional jiffy bag is dispatched to a customer.</description>
+    <name>Raise additional Jiffy bag dispatch</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2011/12/09 11:13:50 UTC</created_at>
+    <updated_at type="datetime">2012/02/07 16:13:06 UTC</updated_at>
+    <labels>cpp insurance</labels>
+  </story>
+  <story>
+    <id type="integer">21450617</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/21450617</url>
+    <estimate type="integer">1</estimate>
+    <current_state>unscheduled</current_state>
+    <description></description>
+    <name>Implement test-library calls to use actual sku codes on workflow-tasks gem</name>
+    <requested_by>Developers</requested_by>
+    <owned_by>Developers</owned_by>
+    <created_at type="datetime">2011/11/24 17:12:58 UTC</created_at>
+    <updated_at type="datetime">2011/12/11 12:21:48 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">22294355</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/22294355</url>
+    <current_state>unscheduled</current_state>
+    <description>On succesful assignment of an alternative device the page redirects to /unprocessed_claims instead of /replacement_orders</description>
+    <name>Replacement device routing</name>
+    <requested_by>Developers</requested_by>
+    <lighthouse_id>34</lighthouse_id>
+    <lighthouse_url>http://regenersis.lighthouseapp.com/projects/86258/tickets/34</lighthouse_url>
+    <integration_id>9671</integration_id>
+    <created_at type="datetime">2011/12/14 15:26:44 UTC</created_at>
+    <updated_at type="datetime">2011/12/19 14:31:53 UTC</updated_at>
+  </story>
+  <story>
+    <id type="integer">20773991</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/20773991</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>Given an accidental damage device is at book in
+And a sim has been returned
+Then the sim should be destroyed</description>
+    <name>Accidental Damage destroy sim</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2011/11/09 09:10:49 UTC</created_at>
+    <updated_at type="datetime">2011/12/19 14:31:30 UTC</updated_at>
+    <labels>cpp accidental damage,nice to have</labels>
+    <tasks type="array">
+      <task>
+        <id type="integer">4255927</id>
+        <description>Modify sim check task to record destroy task instead of package</description>
+        <position type="integer">1</position>
+        <complete type="boolean">false</complete>
+        <created_at type="datetime">2011/11/09 09:10:49 UTC</created_at>
+      </task>
+    </tasks>
+  </story>
+  <story>
+    <id type="integer">20773947</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/20773947</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>Given a device has been returned with accessories
+When at book in
+Then the accessories are placed in a store location to be returned with new/repaired device</description>
+    <name>Accidental Damage Book in package accessories</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2011/11/09 09:09:02 UTC</created_at>
+    <updated_at type="datetime">2011/12/19 14:31:33 UTC</updated_at>
+    <labels>cpp accidental damage,nice to have</labels>
+  </story>
+  <story>
+    <id type="integer">20773899</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/20773899</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>Given a device has been booked in as accidental damage
+When at the start of the screening flow
+Then a viability check should be made on the device</description>
+    <name>Accidental Damage Device Viability</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2011/11/09 09:06:13 UTC</created_at>
+    <updated_at type="datetime">2011/12/19 14:31:36 UTC</updated_at>
+    <labels>cpp accidental damage</labels>
+  </story>
+  <story>
+    <id type="integer">27023559</id>
+    <project_id type="integer">332489</project_id>
+    <story_type>feature</story_type>
+    <url>http://www.pivotaltracker.com/story/show/27023559</url>
+    <estimate type="integer">-1</estimate>
+    <current_state>unscheduled</current_state>
+    <description>TBD</description>
+    <name>Device Retrieval (CPP4) escalation process</name>
+    <requested_by>Developers</requested_by>
+    <created_at type="datetime">2012/03/26 16:05:10 UTC</created_at>
+    <updated_at type="datetime">2012/05/24 15:44:53 UTC</updated_at>
+    <labels>cpp4</labels>
+  </story>
+</stories>
