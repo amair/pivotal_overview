@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
     unless @token.nil?
       Token.update_token(@token)
       cookies.permanent[:token] = @token
-      logger.debug "Retrieve Pivotal token #{token} from page submission and store in cookie"
+      logger.debug "Retrieve Pivotal token #{@token} from page submission and store in cookie"
     end
 
     unless cookies[:token].nil?
