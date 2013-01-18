@@ -164,7 +164,7 @@ DEPENDENCIES
   pg
   pivotal-tracker
   prawn
-  rails (= 3.2.11)
+  rails (~> 3.2.11)
   rainbow
   rb-readline
   rspec-rails

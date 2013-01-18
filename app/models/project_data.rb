@@ -29,5 +29,19 @@ class ProjectData < PivotalTracker::Project
     story
   end
 
+  def self.find_tasks(story)
+    PivotalTracker::Client.token = Token.get_token
+    tasks = story.tasks.all
+
+    tasks
+  end
+
+  def self.find_notes(story)
+    PivotalTracker::Client.token = Token.get_token
+    notes = story.notes.all
+
+    notes
+  end
+
 
 end

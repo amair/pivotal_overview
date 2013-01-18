@@ -1,1 +1,28 @@
-<h1><%= @story.name %></h1>
+<div class="storycard">
+  <h1><%= @story.name %></h1>
+
+  <div class="storydescription"></div>
+  <%= @story.description %>
+
+  <ul>
+
+    <% @tasks.each do |t| %>
+        <li>
+          <div class=<%= t.complete %>>
+
+            <%= t.description %>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+
+  <ul>
+
+    <% @notes.each do |n| %>
+        <li>
+            <%= n.text %>
+        </li>
+    <% end %>
+  </ul>
+
+</div>

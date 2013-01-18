@@ -10,6 +10,7 @@ class StoriesController < ApplicationController
     get_pivotal_token
     project = ProjectData.find_project(Integer(params[:project_id]))
     @story = ProjectData.find_story(project, Integer(params[:id]))
-
+    @tasks =  ProjectData.find_tasks(@story)
+    @notes = ProjectData.find_notes(@story)
   end
 end

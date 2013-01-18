@@ -38,18 +38,12 @@
   font-size: 1em;
 }
 
-.printrows {
-  width: 80%;
-  min-width: 300px;
-  left: 10%;
-  background-color: #a9a77e;
-}
 
-.printrows a:link {
+.printrows:link {
   color: #000000;
 }
 
-.printrows a:visited {
+.printrows:visited {
   color: #000000;
 }
 

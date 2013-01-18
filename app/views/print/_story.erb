@@ -1,5 +1,5 @@
 <div class="story">
-  <%= check_box_tag 'story[]', [story.project_id, story.id],
+  <%= check_box_tag 'story[]', [project_id, story.id],
                     (params[:stories] || {}).include?(story.id) %>
-  <%= story.name %>
+  <%= link_to story.name, project_story_url(:project_id => project_id, :id => story.id), :class => 'printrows' %>
 </div>
