@@ -124,8 +124,8 @@ module PDF
       end
 
 
-    rescue Exception
-      puts "[!] There was an error while generating the PDF file... What happened was:".foreground(:red)
+    rescue Exception => e
+      logger.debug "[!] There was an error while generating the PDF file... What happened was: #{e.message}"
       raise
     else
       @filename
@@ -180,7 +180,7 @@ class PrintController < ApplicationController
     pdf = PDF::Generator.new(@stories)
     file = pdf.write_to
 
-     send_file file.path, :type=>"application/pdf" unless file.nil
+    send_file file.path, :type=>"application/pdf" unless file.nil?
 
     #file.unlink  # deletes the temp file
   end
