@@ -18,10 +18,11 @@
 <%= form_tag do %>
     <%= submit_tag("Print selected items", :class => 'rounded_button print_button') %>
     <div class="projects">
-      <% if Token.get_token.nil? %>
+      <% if !Token.get_token %>
           <div id="error"></div>
-          Please set your Pivotal tracker token. This can be found under the profile menu on your
-          <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> site when logged in. </div>
+          Please set your Pivotal tracker token in order to access project data.
+          <br/>Log in to your account at
+          <a href="http://www.pivotaltracker.com">Pivotal Tracker</a> site and you will find it under the profile menu. </div>
       <% elsif @projects.nil? %>
           <div id="error">No project data could be retrieved from Pivotal Tracker</div>
       <% else %>
