@@ -1,9 +1,9 @@
 class Token
   @token=nil   #N.B. Class Instance Variable
 
-  def self.get_token
+  def self.set?
     PivotalTracker::Client.token = @token
-    @token.present?
+    !@token.blank?
   end
 
   def self.update_token( new_token)

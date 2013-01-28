@@ -2,7 +2,7 @@ class ProjectData < PivotalTracker::Project
 
   def self.find_all_projects
 
-    if Token.get_token then
+    if Token.set? then
       projects = PivotalTracker::Project.all
     end
 
@@ -10,7 +10,7 @@ class ProjectData < PivotalTracker::Project
   end
 
   def self.find_project (id)
-    if Token.get_token then
+    if Token.set? then
       project = PivotalTracker::Project.find(id)
     end
 
@@ -18,7 +18,7 @@ class ProjectData < PivotalTracker::Project
   end
 
   def self.find_all_stories(project, states=["unscheduled", "unstarted", "started", "finished", "delivered", "accepted", "rejected"])
-    if Token.get_token then
+    if Token.set? then
       stories = project.stories.all(:current_state => states, :story_type => ['feature', 'bug', 'chore'] )
     end
 
@@ -26,7 +26,7 @@ class ProjectData < PivotalTracker::Project
   end
 
   def self.find_story(project, id)
-    if Token.get_token then
+    if Token.set? then
       story = project.stories.find(id)
     end
 
@@ -34,7 +34,7 @@ class ProjectData < PivotalTracker::Project
   end
 
   def self.find_tasks(story)
-    if Token.get_token then
+    if Token.set? then
       tasks = story.tasks.all
     end
 
@@ -42,7 +42,7 @@ class ProjectData < PivotalTracker::Project
   end
 
   def self.find_notes(story)
-    if Token.get_token then
+    if Token.set? then
       notes = story.notes.all
     end
 

@@ -18,7 +18,7 @@
 <%= form_tag do %>
     <%= submit_tag("Print selected items", :class => 'rounded_button print_button') %>
     <div class="projects">
-      <% if !Token.get_token %>
+      <% if !Token.set? %>
           <div id="error"></div>
           Please set your Pivotal tracker token in order to access project data.
           <br/>Log in to your account at

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story>
+  <id type="integer">25400385</id>
+  <project_id type="integer">332489</project_id>
+  <story_type>bug</story_type>
+  <url>http://www.pivotaltracker.com/story/show/25400385</url>
+  <estimate type="integer">-1</estimate>
+  <current_state>unstarted</current_state>
+  <description>New claim flow is required for doorstep exchanges via DPD.  Process is same as current lossTheftClaim except after sending the device it transitions to an awaiting_device state and only successful screening of the returned device transitions to complete.
+Use same letters as LossTheft</description>
+  <name>Doorstep exchange claim</name>
+  <requested_by>Developers</requested_by>
+  <created_at type="datetime">2012/02/23 16:37:14 UTC</created_at>
+  <updated_at type="datetime">2012/03/13 10:59:44 UTC</updated_at>
+</story>
