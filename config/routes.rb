@@ -1,8 +1,8 @@
 PivotalOverview::Application.routes.draw do
 
-  resources :print do
+  root :to => "root_page#index"
 
-  end
+  resources :root_page, :print
 
   resources :projects do
     resources :stories

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story>
+  <id type="integer">27023259</id>
+  <project_id type="integer">332489</project_id>
+  <story_type>feature</story_type>
+  <url>http://www.pivotaltracker.com/story/show/27023259</url>
+  <estimate type="integer">1</estimate>
+  <current_state>delivered</current_state>
+  <description>As an agent I want to be able to raise a new claim for a device retrieval, as per the (first part of the) attached flow.  Data captured should be
+&#8220;Gadget Type&#8221; (Laptop, Handset, Gadget)
+Serial number (optional)
+Policy Number and Claim Auth
+Name and Address (inc postcode)
+Make &amp; model of device</description>
+  <name>Raise new device retrieval claim (CPP4)</name>
+  <requested_by>Developers</requested_by>
+  <owned_by>Developers</owned_by>
+  <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+  <updated_at type="datetime">2012/04/03 13:36:37 UTC</updated_at>
+  <labels>7th april,cpp4</labels>
+  <notes type="array">
+  </notes>
+  <attachments type="array">
+    <attachment>
+      <id type="integer">5471659</id>
+      <filename>Insuarnce_Collection_Request__CPP4__Process_Flow_V1.0.vsd</filename>
+      <description></description>
+      <uploaded_by>Developers</uploaded_by>
+      <uploaded_at type="datetime">2012/03/26 15:30:30 UTC</uploaded_at>
+      <url>https://www.pivotaltracker.com/resource/download/5471659</url>
+    </attachment>
+  </attachments>
+  <tasks type="array">
+    <task>
+      <id type="integer">6418383</id>
+      <description>Data entry screen to capture claim details</description>
+      <position type="integer">1</position>
+      <complete type="boolean">true</complete>
+      <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+    </task>
+    <task>
+      <id type="integer">6418385</id>
+      <description>New CPP claim type and routing</description>
+      <position type="integer">2</position>
+      <complete type="boolean">true</complete>
+      <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+    </task>
+  </tasks>
+</story>

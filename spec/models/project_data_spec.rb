@@ -7,13 +7,7 @@ describe ProjectData do
   end
 
   before(:each) do
-    project_resp = load_xml_fixture_file('projects')
-
-    Token.update_token("12345")
-
-    stub_request(:get, "http://www.pivotaltracker.com/services/v3/projects").to_return(:status => 200, :body => project_resp, :headers => {})
-
-    @projects = ProjectData.find_all_projects
+    @projects = load_all_projects 'projects'
   end
 
 
@@ -52,13 +46,12 @@ describe ProjectData do
   end
 
   it 'should retrieve an individual story' do
-    story_bug = load_xml_fixture_file('story_bug')
-    stub_request(:get, "http://www.pivotaltracker.com/services/v3/projects/332489/stories/25400385").to_return(:status => 200, :body => story_bug, :headers => {})
-
+    story_id=25400385
     project = @projects.first
 
-    story = ProjectData.find_story(project, Integer(25400385))
-    story.id.should eq(25400385)
+    story= load_story(project,story_id,'story_bug')
+
+    story.id.should eq(story_id)
   end
 
 

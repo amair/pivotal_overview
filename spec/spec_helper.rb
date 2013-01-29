@@ -5,6 +5,9 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'webmock/rspec'
 require 'helpers/Xml_spec_helper'
+require 'helpers/project_stub_helper'
+require 'helpers/story_stub_helper'
+require 'helpers/task_stub_helper'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -38,4 +41,7 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
   config.include XmlSpecHelper
+  config.include ProjectStubHelper
+  config.include StoryStubHelper
+  config.include TaskStubHelper
 end

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story>
+  <id type="integer">40181287</id>
+  <project_id type="integer">332489</project_id>
+  <story_type>feature</story_type>
+  <url>http://www.pivotaltracker.com/story/show/40181287</url>
+  <estimate type="integer">-1</estimate>
+  <current_state>unscheduled</current_state>
+  <description>CPPClaimData allows data to be deleted from the UI.
+This should not be supported, instead data should be flagged as deleted and not displayed through the UI.
+Additionally the user and time of deletion needs to be recorded.</description>
+  <name>Audit deletions</name>
+  <requested_by>Alastair Mair</requested_by>
+  <created_at type="datetime">2012/11/27 08:55:56 UTC</created_at>
+  <updated_at type="datetime">2012/11/27 08:55:56 UTC</updated_at>
+</story>

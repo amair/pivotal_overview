@@ -1,5 +1,6 @@
 module PivotalTracker
   class Story
+    element :div_class, String
 
     def label_list
       return "" if !self.respond_to?(:labels) || self.labels.nil? || self.labels.empty?
@@ -23,7 +24,7 @@ module PivotalTracker
       "Points: " + (self.respond_to?(:estimate) && !self.estimate.eql?(-1) ? self.estimate.to_s : "Not yet estimated")
     end
 
-    def story_color
+    def colour
       return "0000FF" if self.div_class.eql? "project0"
       return "FFFF00" if self.div_class.eql? "project1"
       return "00FF00" if self.div_class.eql? "project2"

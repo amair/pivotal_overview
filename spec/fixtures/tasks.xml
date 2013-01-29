@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks type="array">
+  <task>
+    <id type="integer">6418383</id>
+    <description>Data entry screen to capture claim details</description>
+    <position type="integer">1</position>
+    <complete type="boolean">false</complete>
+    <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+  </task>
+  <task>
+    <id type="integer">6418385</id>
+    <description>New CPP claim type and routing</description>
+    <position type="integer">2</position>
+    <complete type="boolean">false</complete>
+    <created_at type="datetime">2012/03/26 16:01:55 UTC</created_at>
+  </task>
+</tasks>
